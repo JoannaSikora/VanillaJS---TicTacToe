@@ -129,7 +129,7 @@ function checkWin(currentPlayer, board_state) {
     let winComb = !check.includes("") && (check[0] == check[1]) && (check[1]==check[2])
 
 
-//if I win in a last move it says it s a tie
+// winning, losing and a tie
     if(winComb){
       winner.style.display = "block"
       winner.innerHTML = `${currentPlayer} WON!!!`
